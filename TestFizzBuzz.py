@@ -4,9 +4,9 @@ import FizzBuzz
 
 class TestFizzBuzz(unittest.TestCase):
     def test_fizz(self):
-     '''
-       test case for fizz scenario
-     '''
+
+       # test case for fizz scenario
+
      # capture the result from FizzBuzz.py
         result = FizzBuzz.fizz_buzz(3)
      # expectet result
@@ -16,10 +16,9 @@ class TestFizzBuzz(unittest.TestCase):
 
 
     def test_buzz(self):
-           '''
-           test case for buzz scenario
-           '''
-     
+
+           # test case for buzz scenario
+
         result = FizzBuzz.fizz_buzz(5)
         expected_result = 'Buzz'
      #check
@@ -27,9 +26,9 @@ class TestFizzBuzz(unittest.TestCase):
 
 
     def test_Fizz_buzz(self):
-        '''
-        test case for FizzBuzz scenario
-        '''
+
+        # test case for FizzBuzz scenario
+
         result = FizzBuzz.fizz_buzz(15)
         expected_result = 'FizzBuzz'
         #check the excepted result
