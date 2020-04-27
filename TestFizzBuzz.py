@@ -1,49 +1,39 @@
-import unittest
+import pytest
 
-import FizzBuzz
+from FizzBuzz import FizzBuzz
 
-class TestFizzBuzz(unittest.TestCase):
-    def test_fizz(self):
+class TestFizzBuzz():
+    @pytest.mark.parametrize(
+        "a, excepted", 
+        [
+            (1, '1'),
+            (2, '2'),
+            (3, 'Fizz'),
+            (4, '4'),
+            (5, 'Buzz'),
+            (15, 'FizzBuzz'),
+        ],
+    )
+    def test_batch_test(self, a, excepted):
+        fizzbuzz = FizzBuzz()
+        assert fizzbuzz.fizz_buzz(a) == excepted
 
-       # test case for fizz scenario
 
-     # capture the result from FizzBuzz.py
-        result = FizzBuzz.fizz_buzz(3)
-     # expectet result
+    def test_fizz_case(self):
+        fizzbuzz = FizzBuzz()
+        result = fizzbuzz.fizz_buzz(3)
         expected_result = 'Fizz'
-     #check the expected result
-        self.assertEqual(expected_result, result)
+        assert result == expected_result
 
 
-    def test_buzz(self):
-
-           # test case for buzz scenario
-
-        result = FizzBuzz.fizz_buzz(5)
+    def test_buzz_case(self):
+        fizzbuzz = FizzBuzz()
+        result = fizzbuzz.fizz_buzz(5)
         expected_result = 'Buzz'
-     #check
-        self.assertEqual(expected_result,result)
+        assert result == expected_result  
 
-
-    def test_Fizz_buzz(self):
-
-        # test case for FizzBuzz scenario
-
-        result = FizzBuzz.fizz_buzz(15)
+    def test_fizzbuzz_case(self):
+        fizzbuzz = FizzBuzz()
+        result = fizzbuzz.fizz_buzz(15)
         expected_result = 'FizzBuzz'
-        #check the excepted result
-        self.assertEqual(expected_result,result)
-
-
-    def test_normal_number(self):
-        '''
-         test case for the number cannot fall in those 3 cases
-        '''
-        result = FizzBuzz.fizz_buzz(1)
-        expected_result = '1'
-        # check the excepted result
-        self.assertEqual(expected_result, result)
-
-
-if __name__ == '__main__':
-    unittest.main()
+        assert result == expected_result    

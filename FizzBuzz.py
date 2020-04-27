@@ -1,19 +1,23 @@
-'''
-   the functinon is for TDD propuse
-   the logic is that:
-   when given number can be divided by 3 with no remainder, then return 'Fizz'
-   when given number can be divided by 5 with no remainder, then return 'Buzz'
-   when given number can be divided by 3 and 5 with no remainder, then return 'FizzBuzz'
-   otherwise return the given number itself
-'''
-def fizz_buzz(number):
+class FizzBuzz:
+    '''
+        This is for TDD sample 
+        Author: Keller Zhang
+        create date: 04/27
+        description: FizzBuzz Quiz
+              When given number just can be divided by 3, then return 'Fizz';
+              When given number just can be divided by 5, then return 'Buzz';
+              When given number just can be divided by 3 and 5, then return 'FizzBuzz';
+              otherwise return given number itself.
+    '''
 
-    if number % 15 ==0:
-       result = "FizzBuzz"
-    elif number % 5 == 0:
-        result = "Buzz"
-    elif number % 3 == 0:
-        result = "Fizz"
-    else:
-        result = str(number)
-    return result
+    def fizz_buzz(self, number):
+        result = ''
+        if number % 3 == 0 and number % 5 !=0:
+           result = 'Fizz'
+        elif number % 5 == 0 and number % 3 !=0:
+            result = 'Buzz'
+        elif number % 5 == 0 and number % 3 ==0:
+            result = 'FizzBuzz'
+        else:
+            result = str(number)
+        return result
