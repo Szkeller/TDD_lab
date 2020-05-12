@@ -37,4 +37,4 @@ class TestFizzBuzz():
         fizzbuzz = FizzBuzz()
         result = fizzbuzz.fizz_buzz(15)
         expected_result = 'FizzBuzz'
-        assert result == expected_result    
+        assert result == expected_result
