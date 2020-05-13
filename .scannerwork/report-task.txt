@@ -2,5 +2,5 @@ projectKey=myPythonProjects
 serverUrl=http://127.0.0.1:9000
 serverVersion=8.3.0.34182
 dashboardUrl=http://127.0.0.1:9000/dashboard?id=myPythonProjects
-ceTaskId=AXIGnbyacQJ95yz_82dz
-ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=AXIGnbyacQJ95yz_82dz
+ceTaskId=AXIInRUFXfYNUZgJA7Mg
+ceTaskUrl=http://127.0.0.1:9000/api/ce/task?id=AXIInRUFXfYNUZgJA7Mg

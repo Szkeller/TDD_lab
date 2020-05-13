@@ -12,12 +12,19 @@ class FizzBuzz:
 
     def fizz_buzz(self, number):
         result = ''
-        if number % 3 == 0 and number % 5 !=0:
-           result = 'Fizz'
-        elif number % 5 == 0 and number % 3 !=0:
-            result = 'Buzz'
-        elif number % 5 == 0 and number % 3 ==0:
+        # if number % 3 == 0 and number % 5 !=0:
+        #    result = 'Fizz'
+        # elif number % 5 == 0 and number % 3 !=0:
+        #     result = 'Buzz'
+        # elif number % 5 == 0 and number % 3 ==0:
+        #     result = 'FizzBuzz'
+        # else:
+        if number % 15 == 0:
             result = 'FizzBuzz'
+        elif number % 5 == 0:
+            result = 'Buzz'
+        elif number % 3 == 0:
+            result = 'Fizz'
         else:
             result = str(number)
         return result
