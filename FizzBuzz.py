@@ -12,13 +12,6 @@ class FizzBuzz:
 
     def fizz_buzz(self, number):
         result = ''
-        # if number % 3 == 0 and number % 5 !=0:
-        #    result = 'Fizz'
-        # elif number % 5 == 0 and number % 3 !=0:
-        #     result = 'Buzz'
-        # elif number % 5 == 0 and number % 3 ==0:
-        #     result = 'FizzBuzz'
-        # else:
         if number % 15 == 0:
             result = 'FizzBuzz'
         elif number % 5 == 0:
@@ -28,3 +21,7 @@ class FizzBuzz:
         else:
             result = str(number)
         return result
+if __name__ == '__main__':
+    fizzbuzz = FizzBuzz()
+    for i in range (1,101):
+        print(fizzbuzz.fizz_buzz(i))
