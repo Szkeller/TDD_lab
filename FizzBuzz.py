@@ -21,6 +21,7 @@ class FizzBuzz:
         else:
             result = str(number)
         return result
+    
 if __name__ == '__main__':
     fizzbuzz = FizzBuzz()
     for i in range (1,101):

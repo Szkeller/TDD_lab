@@ -38,3 +38,7 @@ class TestFizzBuzz():
         result = fizzbuzz.fizz_buzz(15)
         expected_result = 'FizzBuzz'
         assert result == expected_result
+        
+if __name__ == '__main__':
+    pytest.main()
+    
